@@ -1,0 +1,255 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+body{
+    background-color: beige;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* utilitarias */
+.container{
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn-general{
+  display: flex;
+  width: 30%;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: .5rem;
+  margin: 0 auto;
+  margin-bottom: .5em;
+  border-radius: .5em;
+}
+
+.btn{
+  width: 40%;
+  background-color:#062a69 ;
+  color: antiquewhite;
+}
+
+
+.btn-dark{
+  color: rgb(10, 7, 7.5);
+  background-color: #fdfdfd;
+  
+}
+.btn-general:hover{
+  background-color: #1466f4;
+  color: beige;
+}
+
+
+
+/* header */
+.bg-header{
+  background-image: url('../img/bg-header-min.jpg');
+  height: 18.75em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-navbar{
+  background-color: rgba(0, 0, 0, 0.52);
+  padding: 1em 0;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navbar-brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand{
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.navbar-brand img{
+  width: 2em;
+}
+
+.navbar-nav{
+  background-color: rgba(0, 0, 0, .7);
+  padding: 1em;
+  border-radius: 0.2em;
+}
+
+.nav-link{
+  display: inline-block;
+  padding: 0.3em;
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0.1em;
+}
+
+.nav-link:hover{
+  background-color: blanchedalmond;
+  color: black;
+  border-radius: .5em;
+  
+}
+
+.main {
+  color: rgba(0, 0, 0, 0.793);
+  background-color: whitesmoke;
+  margin-top: -2rem;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.main-title{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+  .tienda{
+    display: flex;
+   
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .btn-general{
+    display: flex;
+    width: 105px;
+  }
+}
+/* card */
+.card-img{
+  width: 100%;
+
+}
+.card{
+  width: 20rem;
+  background-color: #041634;
+  overflow: hidden;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card-body{
+  padding: 15 px;
+}
+
+.card-body h5{
+  font-size: 1.5rem;
+  margin: 1.5em ;
+  font-weight: 500;
+}
+
+.card-body p{
+  font-weight: 1.5rem;
+  margin: 2em;
+}
+
+
+
+/* nosotros */
+
+.nosotros{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  background-color: rgb(235, 235, 235);
+}
+
+.nosotros-col-img{
+  background-image: url("../img/nosotros-min.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 21.875em;
+  order: 2;
+}
+
+.nosotros-col-text{
+  order: 1;
+}
+
+@media (min-width:768px) {
+  .nosotros{
+    flex-direction: row;
+  }
+  .nosotros-col-img{
+    order: 1;
+    flex: 1 1 0;
+  }
+  .nosotros-col-text{
+    order: 2;
+    flex: 1 1 0;
+  }
+}
+
+.nosotros-body{
+  padding: 1em;
+  text-align: center;
+  color: #041634;
+  font-weight: 700;
+}
+
+.nosotros-body h2{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nosotros-body p {
+  font-weight: 200;
+}
+
+@media (min-width: 576px) {
+  .nosotros-col-img{
+    height: 31.25em;
+  }
+}
+
+/* footer */
+
+.bg-footer{
+  background-color: #041634;
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.bg-footer p{
+  padding: 1em 0;
+  margin: 0;
+  text-align: center;
+}

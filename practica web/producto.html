@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    <title>practica</title>
+    </head>
+    <body>
+        <!-- cabecera -->
+        <header class="header" >
+            <a href="index.html">
+                <img class="header__logo" src="img/img/logo.png" alt="logotipo">
+            </a>
+        </header>
+        <!-- navegacion -->
+        <nav class="navegacion" >
+            <a class="navegacion__enlaces navegacion__enlaces--activo"  href="index.html">Tienda</a>
+            <a class="navegacion__enlaces navegacion__enlaces--activo"  href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <main class="contenedor">
+            <h1> React Js</h1>
+
+            <div class="camisa">
+                <img src="img/img/3.jpg" alt="imagen del producto" class="camisa__imagen">
+
+                <div class="camisa__contenido">
+                    <p href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aspernatur dolorum fugiat, ea itaque ad cum ratione, possimus vel soluta mollitia voluptate ipsum ab veniam. Dolorum distinctio nesciunt porro cumque.</p>
+
+                    <form  class="formulario">
+                        <select >
+                            <option disabled selected > Seleccionar Talla </option>
+                            <option > S </option>
+                            <option > M </option>
+                            <option > L </option>
+                        </select>
+                        <input type="number" placeholder="Cantida" min="1">
+                    <input type="submit" value="Agregar Al Carrito">
+                    </form>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__texto">FRONT-END STORE "JP" - TODOS LOS DERECHOS RESERVADOS &COPY; </p>
+        </footer>
+    </body>
+</html>
